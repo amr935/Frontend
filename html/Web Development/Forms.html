@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms in HTML</title>
+</head>
+<body>
+    <h2>Forms in HTML:</h2>
+    <!--M1-->
+    <!-- <form action="">  
+        First Name:<input type="text" minlength="5" maxlength="12" required/>
+    </form> -->
+    <!-- M2 -->
+     <!-- <form action="">
+        <p>First Name:</p>
+        <input type="text" minlength="5" maxlength="12" required/>
+     </form> -->
+     <!-- M3 -->
+      <form action="">
+        <label for="fname">First Name:</label>
+        <input id="fname" type="text" minlength="5" maxlength="12" required placeholder="Please Enter First Name" value="Rohan" name="Name"/><!--Also analyse the effect of value and name here-->
+        <label for="mname">Middle Name:</label>
+        <input id="mname" type="text" value="Rk">
+        <label for="lname">Last Name:</label>
+        <input id="lname" type="text" disabled>
+        <br><br>
+        <label for="">Age:</label>
+        <input type="number" >
+        <br><br>
+        <label for="">Email:</label>
+        <input type="email">
+        <br><br>
+        <label for="">Date of Joining:</label>
+        <input type="date">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="Password">
+        <p>Enter Your Shirt Size:</p>
+        <input type="radio" name="ShirtSize" id="Medium" checked value="Medium"><label for="Medium">Medium</label>
+        <input type="radio" name="ShirtSize" id="Small"><label for="Small">Small</label >
+        <input type="radio" name="ShirtSize" id="Large"><label for="Large">Large</label>
+        <br><br>
+        <p>Enter Your Preferred Language:</p>
+        <input type="checkbox" name="lang" id="English">
+        <label for="English">English</label>
+        <input type="checkbox" name="lang" id="Kannada" checked value="Kannada"> <!--Here value attribute reflects its function on search bar of website...to see it's effect remove it,see the bar and add it and again see the bar,you will get it..-->
+        <label for="Kannada">Kannada</label>
+        <input type="checkbox" name="lang" id="Hindi">
+        <label for="Hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="Telugu">
+        <label for="Telugu">Telugu</label>
+        <br><br>
+        <label for="color">Select Your Shirt's Color:</label>
+        <input type="color" id="color">
+        <br><br>
+        <label for="Payment">Select Payment Method:</label>
+        <select name="" id="Payment">
+            <option value="">Select</option>
+            <option value="">GPay</option>
+            <option value="">PhonePe</option>
+            <option value="">UPI</option>
+            <option value="">COD</option>
+        </select>
+        <br><br>
+        <label for="cmts">Please  Provide Your Valuable Feedback:</label>
+        <textarea name="" id="cmts" rows="18" cols="125" placeholder="Please Enter Your Feedback Here."></textarea>
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+      </form>
+</body>
+</html>
+
+
